@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器-属性</title>
+    <style>
+        /*[class='one']{*/
+        /*[class*='o']{*/
+        /*[class$='e']{*/
+        [class^='t']{
+            width:100px;
+            height:100px;
+            background: #a57eff;
+            margin: 10px;
+        }
+        a{
+            color: #000000;
+            text-decoration: none;
+        }
+        a:link{
+            color: #facbff;
+        }
+        a:visited{
+            color: #68ff9d;
+        }
+        a:hover{
+            color: #ff5d4b;
+        }
+        a:active{
+            color: #9190ff;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <a href="http://www.baidu.com">百度一下</a>
+    <div class="one">one</div>
+    <div class="two">two</div>
+    <div class="three">three</div>
+</body>
+</html>

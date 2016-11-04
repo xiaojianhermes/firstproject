@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器-内容</title>
+    <style>
+        p:before{
+            content: "你好";
+        }
+        p:after{
+            content: url("../images/qq.png");
+        }
+
+        div:first-line{
+            color: #a57eff;
+        }
+        div:first-letter{
+            color: #ff5d4b;
+        }
+
+        div>*:not(div){
+            background: #68ff9d;
+        }
+        div:empty{
+            width:100px;
+            height:100px;
+            background: #a57eff;
+        }
+        div[name=banner]{
+            height: 300px;
+        }
+        div:target{
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#footer">回到底部</a>
+        <p>hello</p>
+        <p>name</p>
+        <p>age</p>
+
+        <div class="content">
+            选择器是css3中一个重要的内容，使用它可以大幅度提高开发人员书写或修改样式表时的工作效率。多样的选择器主要替代了html代码中的class属性，class属性在页面中基本用来设置样式，属性本身没有语义，纯粹的为css样式服务，属于多于属性。并且，class属性并没有将样式与元素绑定起来，同样一个class，所有元素都可以使用，容易造成混乱，所以，在css3中，提倡使用选择器来将样式与元素绑定起来.这样的话,样式与元素的匹配一目了然,修改起来更加方便,并且可以减少代码的书写,使整个页面简单明了.
+        </div>
+        <div class="content">
+            Each web application you build is composed of objects that collaborate to get stuff done. These objects need to be instantiated and wired together for the app to work. In Angular apps most of these objects are instantiated and wired together automatically by the injector service.The most verbose, but also the most comprehensive one is a Provider recipe. The remaining four recipe types — Value, Factory, Service and Constant — are just syntactic sugar on top of a provider recipe.
+        </div>
+        <div name="banner">
+
+        </div>
+        <div id="footer"></div>
+
+    </div>
+</body>
+</html>
